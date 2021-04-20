@@ -1,5 +1,4 @@
-﻿using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class Agent : MonoBehaviour
@@ -17,6 +16,8 @@ public class Agent : MonoBehaviour
         MoveToLastKnownPlayerPosition,
         LookingForPlayer,
         ReturningHome,
+        GrabbingArtifact,
+        ReturningArtifact
     }
 
     protected void GotoState(State newState)
